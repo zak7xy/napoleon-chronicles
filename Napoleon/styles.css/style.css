@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+    --cor-primaria: #000000;
+    --cor-secundaria: #FFF8E8;
+    --cor-terciaria: #99BC85;
+    --cor-quarta: #AAB396;
+    --cor-hover:  #C9B194;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body.home {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+    background-image: url(/assets/Jacques-Louis_David_-_The_Coronation_of_Napoleon_\(1805-1807\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -140px;
+}
+
+
+body.about {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+    background-image: url(https://i.pinimg.com/736x/22/02/2c/22022c541ed9b1ed96e8328ccaf20149.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -60px;
+}
+
+
+.cabecalho {
+    padding: 2% 0% 0% 13%;
+}
+
+
+.cabecalho__menu {
+    display: flex;
+    gap: 70px;
+}
+
+
+.cabecalho__menu__link {
+    color: var(--cor-quarta);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    transition: transform 0.4s ease-in-out;
+    display: inline-block;
+    
+}
+
+
+.cabecalho__menu__link:hover {
+    transform: scale(1.1);
+}
+
+
+.container {
+    padding: 4% 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+
+.apresentacao__conteudo__img {
+    border-radius: 22px;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    display: flex;
+}
+
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+
+.apresentacao__conteudo__titulo {
+    font-size:  1.875rem;
+    font-family: var(--font-primaria);
+}
+
+
+.titulo-destaque {
+    color: var(--cor-quarta);
+}
+
+
+.apresentacao__conteudo__texto {
+    font-size: 1rem;
+    font-family: var(--font-secundaria);
+}
+
+
+.apresentacao__conteudo__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.apresentacao__links__subtitulo {
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+
+.apresentacao__links__apresentacao {
+    background-color: transparent;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-quarta);
+    width: 50%;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: var(--font-secundaria);
+    transition: 1s;
+    cursor: pointer;
+    gap: 11px;
+}
+
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--cor-terciaria); 
+    margin-right: -1px;
+}
+
+
+.apresentacao__links__apresentacao:hover {
+    background-color:  var(--cor-hover);
+    transition: 0.5s;
+    transform: scale(0.9);
+}
+
+
+.apresentacao__conteudo__links img {
+    height: 24px;
+    width: 24px;
+}
+
+
+.rodape {
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 18px;
+    text-align: center;
+    font-family: var(--font-secundaria);
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
+@media (max-width: 900px) {
+    .cabecalho {
+        padding: 6%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .container {
+        flex-direction: column-reverse;
+        padding: 4% 6%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size:  1.400rem;
+    }
+
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
