@@ -14,6 +14,6 @@
 
 ### Isac Sanchez
 
-### Isnstagram: https://instagram.com/zak7xy
+### Instagram: https://instagram.com/zak7xy
 
 ```
